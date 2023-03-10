@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="de">
+    <!-- Head mit CDN-Referenzen-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="script.js"></script>
+    <title>Donation Destination</title>
+
+  
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md p-3">
+        <div class="container">
+            <a class="navbar-brand"></a> 
+             <img src="img/logo_donationdestination.png" href="index.html" width="40" height="40" alt="Donation Destination" class="me-2"></a>
+             <span  class="d-none d-md-inline">Donation Destination</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#gebiete" class="nav-link text-success">Hier kannst du spenden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#registrieren" class="nav-link text-success">Spende registrieren</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontakt" class="nav-link text-success">Noch Fragen?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- So funktioniert es-->
+    <section class="bg-success text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>So funktioniert <span class="text-warning"> Donation Destination</span></h1>
+                    <p class="lead my-4"> Bei uns hast du die Wahl, wohin deine Kleiderspende gehen soll. 
+                    <p class="lead my-4">Wir stellen dir verschiedene Einrichtungen und Krisengebiete vor, die du mit deiner Spende unterstützen kannst.</p>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/wohin.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Gebiete und Organisationen-->
+    <section id="gebiete" class="bg-dark text-warning p-5">
+        <div class="container">
+            <h1 class="text-light">Zwischen diesen <span class="text-warning"> Organisationen und Krisengebiete </span> kannst du wählen:</h1>
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-light">
+                        <img class="img-fluid d-none d-sm-block" src="img/flüchtlingshilfe.jpg" alt="">
+                        <h3 class="card-title mb-3">Flüchtlingshilfe</p>
+                        <p class="card-text text-dark fs-6 text">Viele Flüchtlinge befinden sich in einer humanitären Krise und haben ihr Zuhause und ihre Habe verloren. Oftmals haben sie nur wenige oder gar keine Kleidungsstücke und benötigen dringend Unterstützung.</p> 
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light">
+                        <img class="img-fluid d-none d-sm-block" src="img/obdachlos.jpg" alt="">
+                        <h3 class="card-title mb-3">Obdachlosenhilfe</p>
+                        <p class="card-text text-dark fs-6 text">Viele obdachlose Menschen haben keine Familie oder Freunde, die ihnen helfen können. Sie sind auf Unterstützung durch die Gemeinschaft angewiesen. Durch die Spende von Kleidung können wir dazu beitragen, dass sie sich zumindest in dieser Hinsicht unterstützt fühlen.</p> 
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light">
+                        <img class="img-fluid d-none d-sm-block" src="img/logo_frauenhaus_gross-280x400.png" alt="">
+                        <h3 class="card-title mb-3">Frauenhaus</p>
+                        <p class="card-text text-dark fs-6 text">Frauenhäuser bieten Frauen und ihren Kindern, die Opfer von Gewalt und Missbrauch sind, einen sicheren Zufluchtsort. Oftmals flüchten Frauen aus einer solchen Situation ohne viele persönliche Gegenstände und benötigen dringend Kleidung, um sich zu kleiden und ihre Grundbedürfnisse zu erfüllen.</p> 
+                    </div>
+                </div>
+             </div>
+            <p></p>
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-light">
+                        <img class="img-fluid d-none d-sm-block" src="img/Flag_of_Ukraine.png" alt="">
+                        <h3 class="card-title mb-3">Ukraine</p>
+                        <p class="card-text text-dark fs-6 text">Die Ukraine hat in den letzten Jahren eine Reihe von humanitären Krisen durchgemacht, darunter den Konflikt im Donbass, den Krieg in der Ostukraine und die COVID-19-Pandemie. Viele Menschen sind aufgrund dieser Krisen auf humanitäre Hilfe angewiesen und benötigen dringend Kleidung.</p> 
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light">
+                        <img class="img-fluid d-none d-sm-block" src="img/Flag_of_Syria.png" alt="">
+                        <h3 class="card-title mb-3">Syrien</p>
+                        <p class="card-text text-dark fs-6 text">Syrien befindet sich seit mehr als einem Jahrzehnt in einer humanitären Krise. Millionen von Menschen sind auf der Flucht, leben in Notunterkünften oder haben ihre Häuser verloren. Viele haben nur das Nötigste zum Überleben und benötigen dringend Kleidung.</p> 
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light">
+                        <img class="img-fluid d-none d-sm-block" src="img/Flag_of_Afghanistan.png" alt="">
+                        <h3 class="card-title mb-3">Afghanistan</p>
+                        <p class="card-text text-dark fs-6 text">Afghanistan befindet sich seit langem in einer humanitären Krise, die sich in den letzten Jahren verschärft hat. Viele Menschen sind auf der Flucht oder haben ihr Zuhause und ihre Habe verloren. Viele von ihnen haben nur wenige oder gar keine Kleidungsstücke und benötigen dringend Unterstützung.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+      Reset()
+  
+  </script>
+  <!--Allgemeine Überschrift-->
+  <h1 class="text-dark bg-success text-center p-4">Jetzt Kleider spenden!</h1>
+     <!-- Registrierung in Geschäftsstelle -->
+     <section id="registrieren" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="img/geschaeftsstelle.svg" class="img-fluid" alt="">
+                </div> 
+    <!--Überschrift-->
+                <div class="col-md p-5">
+                    <h2 class="text-warning">Registrierung in der Geschäftsstelle</h2>
+                    <div class="accordion" id="accordionAbgabe">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingAbgabe">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbgabe" aria-expanded="false" aria-controls="collapseOne" onclick="setzeAbgabe(1)">
+                              Registriere deine Spende bei uns in der Geschäftsstelle:
+                            </button>
+                          </h2>
+                          <div id="collapseAbgabe" class="accordion-collapse collapse" aria-labelledby="headingAbgabe" data-bs-parent="#accordionAbgabe">
+                            <div class="accordion-body">
+      <!--Formular Abgabe in der Geschäftsstelle-->
+                                <form id="FormAbgabe" onsubmit="setzeVorname(); setzeNachname(); setzeEmail(); setzteAbgabe(1)" action="abgabebestaetigung.html"> 
+                                  <script>
+                                    Reset()
+                                
+                                </script>
+                                    <div class="form-group" > 
+      <!--Auswahl wohin die Spende gehen soll-->
+                                        <label for="Ziel">Wähle eine Organisation oder ein Krisengebiet</label>
+                                        <select class="form-control" id="AuswahlZiel" required onchange="setzeZiel()">
+                                          <option disabled seleced>Bitte auswählen</option>
+                                          <option value="Flüchtlingshilfe Hamburg">Flüchtlingshilfe Hamburg</option>
+                                          <option value="Obdachlosenhilfe Hamburg">Obdachlosenhilfe Hamburg</option>
+                                          <option value="Frauenhaus Hamburg">Frauenhaus Hamburg</option>
+                                          <option value="Ukraine">Ukraine</option>
+                                          <option value="Syrien">Syrien</option>
+                                          <option value="Afghanistan">Afghanistan</option>
+                                        </select>
+                                      </div></br>
+       <!--Auswahl der Kleidungsstücke-->                               
+                                        <div class="form-group">
+                                        <label for="Kleidung" id="AuswahlKleidung" >Wähle die Kleidungsstücke (Mehrfachauswahl möglich)</label></br>
+                                        <input type="checkbox" name="Kleiderart" value="Pullover" onclick="setzeArt(this)">  Pullover<br>      
+                                        <input type="checkbox" name="Kleiderart" value="Hosen" onclick="setzeArt(this)">  Hosen<br>      
+                                        <input type="checkbox" name="Kleiderart" value="Schuhe" onclick="setzeArt(this)">  Schuhe<br>      
+                                        <input type="checkbox" name="Kleiderart" value="Mützen" onclick="setzeArt(this)">  Mütze<br>    
+                                        <input type="checkbox" name="Kleiderart" value="Jacken" onclick="setzeArt(this)">  Jacken<br>    
+                                        <input type="checkbox" name="Kleiderart" value="Handschuhe" onclick="setzeArt(this)">  Handschuhe<br>  
+                                        <input type="checkbox" name="Kleiderart" value="T-Shirts" onclick="setzeArt(this)">  T-Shirts<br>
+                                        </select>
+                                      </div></br>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <label for="Vorname">Vorname</label>
+                                          <input type="name" class="form-control" id="EingabeVorname" placeholder="Vorname" required>
+                                        </div></br>
+                                        <div class="form-group col-md-6">
+                                          <label for="Nachname">Nachname</label>
+                                          <input type="name" class="form-control" id="EingabeNachname" placeholder="Nachname" required>
+                                        </div>
+                                      </div></br>
+                                    <div class="form-group">
+                                        <label for="EingabeEmail">Email Adresse</label>
+                                        <input type="email" class="form-control" id="EingabeEmail" placeholder="name@beispiel.de" required>
+                                      </div></br>
+                                    </div>
+                                <button class="btn btn-success" type="submit" id="submit-btn" onclick="return validateForm1()">Jetzt Spende registrieren!</button>
+                             </form>
+                             <p id="error-message"></p>
+                             
+
+                         </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <!-- Registrierung Abholung -->
+    <section class="bg-light">
+       <div class="container">
+           <div class="row align-items-center justify-content-between">
+               <div class="col-md">
+                   <img src="img/abholung.svg" class="img-fluid" alt="">
+               </div> 
+               <div class="col-md p-5">
+    <!--Überschrift-->
+                   <h2 class="text-warning">Abholung mit dem Sammelfahrzeug</h2>
+                   <div class="accordion" id="accordionAbholung">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingAbholung">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAbholung" aria-expanded="false" aria-controls="collapseOne" onclick="setzeAbgabe(2)">
+                          Registriere deine Spende für eine Abholung zuhause:
+                        </button>
+                      </h2>
+                      <div id="collapseAbholung" class="accordion-collapse collapse" aria-labelledby="headingAbholung" data-bs-parent="#accordionAbholung">
+                        <div class="accordion-body">
+    <!--Formular Abholung zuhause-->
+                            <form id="FormAbholung" onsubmit="setzeVorname2(); setzeNachname2(); setzeEmail2(); setzeAdresse(); setzeStadt(); setzePLZ(); setzteAbgabe(2)" action="abholungbestaetigung.html"> 
+                            
+                                <div class="form-group" > 
+    <!--Auswahl wohin die Spende gehen soll-->
+                                    <label for="Ziel">Wähle eine Organisation oder ein Krisengebiet</label>
+                                    <select class="form-control" id="AuswahlZiel2" required onchange="setzeZiel2()">
+                                      <option disabled seleced>Bitte auswählen</option>
+                                      <option value="Flüchtlingshilfe Hamburg">Flüchtlingshilfe Hamburg</option>
+                                      <option value="Obdachlosenhilfe Hamburg">Obdachlosenhilfe Hamburg</option>
+                                      <option value="Frauenhaus Hamburg">Frauenhaus Hamburg</option>
+                                      <option value="Ukraine">Ukraine</option>
+                                      <option value="Syrien">Syrien</option>
+                                      <option value="Afghanistan">Afghanistan</option>
+                                    </select>
+                                  </div></br>
+                                  <div class="form-group">
+      <!--Auswahl der Kleidungsstücke-->
+                                    <label for="Kleidung" id="AuswahlKleidung2" >Wähle die Kleidungsstücke (Mehrfachauswahl möglich)</label></br>
+                                    <input type="checkbox" name="Kleiderart2" value="Pullover" onclick="setzeArt2(this)">  Pullover<br>      
+                                    <input type="checkbox" name="Kleiderart2" value="Hosen" onclick="setzeArt2(this)">  Hosen<br>      
+                                    <input type="checkbox" name="Kleiderart2" value="Schuhe" onclick="setzeArt2(this)">  Schuhe<br>      
+                                    <input type="checkbox" name="Kleiderart2" value="Mützen" onclick="setzeArt2(this)">  Mütze<br>    
+                                    <input type="checkbox" name="Kleiderart2" value="Jacken" onclick="setzeArt2(this)">  Jacken<br>    
+                                    <input type="checkbox" name="Kleiderart2" value="Handschuhe" onclick="setzeArt2(this)">  Handschuhe<br>  
+                                    <input type="checkbox" name="Kleiderart2" value="T-Shirts" onclick="setzeArt2(this)">  T-Shirts<br>
+                                    </select>
+                                  </div></br>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="Vorname2">Vorname</label>
+                                        <input type="name" class="form-control" id="EingabeVorname2" placeholder="Vorname"required > 
+                                    </div></br>
+                                    <div class="form-group col-md-6">
+                                      <label for="Nachname2">Nachname</label>
+                                      <input type="name" class="form-control" id="EingabeNachname2" placeholder="Nachname" required>
+                                    </div>
+                                  </div></br>
+                                  <div class="form-group">
+                                    <label for="Adresse">Straße und Hausnummer</label>
+                                    <input type="text" class="form-control" id="EingabeAdresse" placeholder="Hauptstraße 1" required>
+                                  </div></br>
+                                  <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <label for="Stadt">Stadt</label>
+                                      <input type="text" class="form-control" id="EingabeStadt" placeholder="Hamburg" required>
+                                    </div></br>
+                                    <p class="text-danger">Bitte beachten Sie das eine Abgabe nur im PLZ-Bereich 21xxx möglich ist</p>
+                                    <div class="form-group col-md-2">
+                                      <label for="PLZ">Postleitzahl</label>
+                                      <input type="text" class="form-control" id="EingabePLZ" placeholder="PLZ" required pattern="[0-9]{5}">
+                                    </div></br>
+                                  </div>
+                                  
+                                <div class="form-group">
+                                    <label for="email2">Email Adresse</label>
+                                    <input type="email" class="form-control" id="EingabeEmail2" placeholder="name@beispiel.de" required>
+                                  </div></br>
+                            </div>
+                            <button class="btn btn-success" type="submit" id="submit-btn" onclick="return validateForm2()">Jetzt Abholung bestellen!</button>
+                            
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            
+                  
+                </div>
+               </div>
+           </div>
+       </div>
+       
+       
+    </section>
+
+     <!-- Kontakt-->
+     
+    <section id="kontakt" class="bg-success text-light p-5 text-center text-sm-start">
+      <div class="container">
+          <div class="d-sm-flex align-items-center justify-content-between">
+              <div>
+                  <h1>Noch <span class="text-warning">Fragen?</span></h1>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Wann wird meine Spende abgeholt?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                         Sobald deine Registrierung bestätigt wurde, versuchen wir deine Spende schnellstmöglich abzuholen. Spätestens nach 5 Werktagen kommt das Sammelfahrzeug zu dir. Einen genauen Abholtermin senden wir dir noch per Email.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Wie übergebe ich meine Spende?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        Am besten packst du deine Spende in einen stabilen Müllsack oder einen Karton. Bitte spende nur Kleider, die sauber und heile sind.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Muss ich bei der Abholung zuhause sein?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>Nein, musst du nicht.</strong> Stell deine Altkleider einfach am Abholtag vor deine Haus- oder Wohnungstür und wir erledigen den Rest. 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <img class="img-fluid w-50 d-none d-sm-block" src="img/questions.svg" alt="">
+          </div>
+      </div>
+    </section>
+</body>     
+        <!-- Footer mit rechtlichen Hinweisen-->
+<footer class="p-5 bg-dark text-white text-center position-relative">
+  <div class="container">
+    <p class="lead">Copyright &copy; 2023 Donation Destination</p>
+      <div class="footer__left">
+        <a href="privacy.html">Datenschutz</a>
+      </div>
+      <div class="footer__right">
+        <a href="imprint.html">Impressum</a>
+       </div>
+       <a href="#" class="position-absolute botton-0 end-0 p-5">
+         <i class="bi bi-arrow-up-circle h1 text-dark"></i>
+       </a>
+  </div>
+</footer>
+</html>

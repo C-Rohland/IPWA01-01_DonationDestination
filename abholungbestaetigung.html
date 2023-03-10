@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+    <!-- Head mit CDN-Referenzen-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Bestätigung</title>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md bg-success navbar-dark py-3">
+        <div class="container">
+            <a href="#" class="navbar-brand"></a>
+             <img src="img/logo_donationdestination.png" href="index.html" width="40" height="40" alt="Donation Destination"> Donation Destination
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html#gebiete" class="nav-link">Hier kannst du spenden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#registrieren" class="nav-link">Spende registrieren</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#kontakt" class="nav-link">Noch Fragen?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Bestätigung-->
+    <section class="bg-success text-light p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Danke für deine<span class="text-warning"> Kleiderspende</span>!</h1>
+                    <p class="lead my-4"> Deine Registrierung war erfolgreich!</p>
+                    <div class="card p-2">
+                        <div class="card-body">
+                          <h5 class="card-title text-dark">Hier ist noch einmal eine Zusammenfassung deiner Eingabe:</h5>
+<!-- Wiedergabe aktuelle Zeit-->                          
+                          <h6 class="card-subtitle mb-2 text-muted">Datum und Uhrzeit</h6>
+                          <p class="card-text text-success">
+                            <script>
+                                var now = new Date();
+                                var day = ("0" + now.getDate()).slice(-2);
+                                var month = ("0" + (now.getMonth() + 1)).slice(-2);
+                                var year = now.getFullYear();
+                                var hours = ("0" + now.getHours()).slice(-2);
+                                var minutes = ("0" + now.getMinutes()).slice(-2);
+                                var seconds = ("0" + now.getSeconds()).slice(-2);
+                                var formattedDate = day + "." + month + "." + year + " " + hours + ":" + minutes + ":" + seconds;
+                                document.write(formattedDate);
+                                </script></p></p>
+<!--Wiedergabe Abholung oder Abgabe-->
+                          <h6 class="card-subtitle mb-2 text-muted">Abholung oder Abgabe:</h6>
+                          <p class="card-text text-success">
+                            <script>
+                                document.write(sessionStorage.getItem(2));
+                            </script></p>
+                          </p>
+<!--Wiedergabe Abholadresse-->
+                          <h6 class="card-subtitle mb-2 text-muted">Abholadresse:</h6>
+                          <p class="card-text text-success">
+                               <script>
+                                var Adresse = sessionStorage.getItem('EingabeAdresse') || '';
+                                var PLZ = sessionStorage.getItem('EingabePLZ') || '';
+                                var Stadt = sessionStorage.getItem('EingabeStadt') || '';
+                                document.write(Adresse + ", " + PLZ + " " + Stadt);
+                              </script> 
+                            </p>
+                          </p>
+<!--Wiedergabe Spendenziel-->
+                          <h6 class="card-subtitle mb-2 text-muted">Spendenziel:</h6>
+                          <p class="card-text text-success">
+                            <script>
+                                document.write(sessionStorage.getItem(3));
+                            </script>
+                          </p>
+<!--Wiedergabe Art der Kleidung-->
+                            <h6 class="card-subtitle mb-2 text-muted">Art der Kleidung:</h6>
+                            <p class="card-text text-success">
+                            <script>
+                                var selectedOptions = JSON.parse(sessionStorage.getItem('selectedOptions')) || [];
+                                document.write(selectedOptions.join(', '));
+                                </script>
+                            </p>
+<!--Wiedergabe Vor- und Nachname-->
+                          <h6 class="card-subtitle mb-2 text-muted">Dein Name:</h6>
+                          <p class="card-text text-success">
+                            <script>
+                              var Vorname2 = sessionStorage.getItem('EingabeVorname2') || '';
+                              var Nachname2 = sessionStorage.getItem('EingabeNachname2') || '';
+                              document.write(Vorname2 + " " + Nachname2);
+                            </script>
+                          </p>
+<!--Wiedergabe Emailadresse-->
+                          <h6 class="card-subtitle mb-2 text-muted">Deine Email:</h6>
+                          <p class="card-text text-success">
+                            <script>
+                                var Email2 = sessionStorage.getItem('EingabeEmail2') || '';
+                                document.write(Email2);
+                              </script>
+                          </p>
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block p-5" src="img/Danke.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <script>
+        var Vorname2 = sessionStorage.getItem('EingabeVorname2') || '';
+        var Nachname2 = sessionStorage.getItem('EingabeNachname2') || '';
+        var Email2 = sessionStorage.getItem('EingabeEmail2') || '';
+        var Adresse = sessionStorage.getItem('EingabeAdresse') || '';
+        var Stadt = sessionStorage.getItem('EingabeStadt') || '';
+        var PLZ = sessionStorage.getItem('EingabePLZ') || '';
+        document.getElementById('Vorname2').innerHTML = Vorname2;
+        document.getElementById('Nachname2').innerHTML = Nachname2;
+        document.getElementById('Email2').innerHTML = Email2;
+        document.getElementById('Adresse').innerHTML = Adresse;
+        document.getElementById('Stadt').innerHTML = Stadt;
+        document.getElementById('PLZ').innerHTML = PLZ;
+    </script>
+</body>
+<footer class="p-5 bg-dark text-white text-center position-relative">
+     <div class="container">
+        <p class="lead">Copyright &copy; 2023 Donation Destination</p>
+        <div class="footer__left">
+            <a href="privacy.html">Datenschutz</a>
+        </div>
+        <div class="footer__right">
+            <a href="imprint.html">Impressum</a>
+        </div>
+        <a href="#" class="position-absolute botton-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1 text-dark"></i>
+         </a>
+     </div>
+</footer>
+<!-- JS-Bundle-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</html>
